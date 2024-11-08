@@ -1,0 +1,8 @@
+[
+null,
+{"id":1,"battlerName":"angell","characterIndex":0,"characterName":"angel","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"angel","traits":[],"initialLevel":1,"maxLevel":99,"name":"Angel","nickname":"","note":"<mv3d>\nscale(1)\n</mv3d>","profile":""},
+{"id":2,"battlerName":"ney","characterIndex":0,"characterName":"ney","classId":2,"equips":[2,1,2,3,0],"faceIndex":0,"faceName":"ney","traits":[],"initialLevel":1,"maxLevel":99,"name":"Ney","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"david","characterIndex":0,"characterName":"david","classId":3,"equips":[3,0,2,3,4],"faceIndex":0,"faceName":"david","traits":[],"initialLevel":1,"maxLevel":99,"name":"David","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"Actor2_7","characterIndex":6,"characterName":"Actor2","classId":4,"equips":[4,0,2,3,4],"faceIndex":6,"faceName":"Actor2","traits":[],"initialLevel":1,"maxLevel":99,"name":"Lucius","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"rigo","characterIndex":0,"characterName":"rigo","classId":2,"equips":[2,1,2,3,4],"faceIndex":0,"faceName":"rigo","traits":[],"initialLevel":1,"maxLevel":99,"name":"Rigo","nickname":"","note":"","profile":""}
+]

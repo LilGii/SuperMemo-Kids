@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+canvas#canvas {
+	position:fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    pointer-events: none;
+}
+body,html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    scroll-behavior:smooth;
+    margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+.seccionAprende{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.huno{
+    font-size: 3em;
+    text-align:center;
+    padding: 3% 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+.seccion{ 
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+#Intro{
+    background: #000000 url('Imagen1.gif') center center fixed;
+    background-size: cover;
+}
+.flotante {
+    position: absolute;
+    bottom: 50%; 
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 1000px; 
+    height: 500px; 
+    animation: flotar 2s ease-in-out infinite;
+}
+@keyframes flotar {
+    0%, 100% {
+        transform: translate(-50%, 50%);
+    }
+    50% {
+        transform: translate(-50%, 40%);
+    }
+}
+#Inicio{
+    background: #000000 url('Imagen2.gif') center center fixed;
+    background-size: cover;
+}
+.SecInicio{
+    display:flex;
+    justify-content: center;
+}
+.InicioTitulo{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #fff,0 0 15px #ff00cc,
+    0 0 20px #ff00cc, 0 0 25px #ff00cc, 0 0 30px #ff00cc;
+} 
+#Aprende{
+    background: #000000 url('Imagen3.gif') center center fixed;
+    background-size: cover;
+}
+.AprendeTitulo{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #fff,0 0 15px #0051ff,
+    0 0 20px #0051ff, 0 0 25px #ff00cc, 0 0 30px #ff00cc;
+} 
+#Juega{
+    background: #000000 url('Imagen4.gif') center center fixed;
+    background-size: cover;
+}
+.JuegaTitulo{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #fff,0 0 15px #00ff08,
+    0 0 20px #00ff08, 0 0 25px #00ff08, 0 0 30px #00ff08;
+}
+#Superate{
+    background: #000000 url('Imagen5.gif') center center fixed;
+    background-size: cover;
+}
+.SuperateTitulo{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #fff,0 0 15px #0084ff,
+    0 0 20px #0084ff, 0 0 25px #0084ff, 0 0 30px #0084ff;
+}
+.menu{
+    width: 100%;
+    height:70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: url('Base.jpg') center center fixed;
+
+}
+.MenuLetras{
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #fff,0 0 15px #000000,
+    0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000;
+    letter-spacing: 10px;
+}
+.menu a{
+    text-align: center;
+    color:#fffefe;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 3em;
+    width: 23%;
+    display: block;
+    float: left;
+}
+/*Seccion de inicio*/
+.container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:10px;
+    margin-top: 2%;
+}
+.container .card{
+    width:450px;
+    position: relative;
+    height: 470px;
+    background: #f0f0f0;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    margin-top:10%;
+
+}
+.container .card .imgBx{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    top: -80px;
+    left: 50px;
+}
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.imgBx:hover{
+    transform: scale(1.1);
+}
+.alinTxtCard{
+    text-align: center;
+}
+
+/*AQUI VA SECCION APRENDE*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operacion {
+    margin: 10px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.operacion:hover {
+    background-color: #0e0d0d;
+}
+.operacion img {
+    width: 160px;
+    height: 160px;
+}
+.opciones {
+    display: none;
+    margin-top: 50px;
+}
+.letrasopciones {  
+    text-decoration: none; /* Elimina cualquier decoración (subrayado, etc.) */
+}
+.opciones .opcion {
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    transition: background-color 0.3s, margin 0.3s; /* Transición para el cambio de color y margen */
+}
+.opciones .opcion a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina cualquier decoración (subrayado, etc.) */
+    transition: none; /* Elimina cualquier transición definida */
+}
+.opciones .opcion a:hover {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina cualquier decoración (subrayado, etc.) */
+}
+.opciones .opcion:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-left: 5px; /* Separación al pasar el mouse */
+    margin-right: 5px; /* Separación al pasar el mouse */
+}
+.grupo {
+    margin: 100px; /* Espacio entre las secciones */
+}
+.letrasOperaciones{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #fff,0 0 15px #ff00cc,
+    0 0 20px #ff00cc, 0 0 25px #ff00cc, 0 0 30px #ff00cc;
+}
+/*Seccion Juega*/
+.juego1 {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(100, 144, 255);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego1:hover {
+    background-color: #5a5f9c;
+}
+.juego1 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ1{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #3300fe,0 0 15px #3300fe,
+    0 0 20px #3300fe, 0 0 25px #3300fe, 0 0 30px #3300fe;
+}
+.juego2 {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(0, 17, 255);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego2:hover {
+    background-color: #00056c;
+}
+.juego2 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ2{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #40ecff,0 0 15px #40ecff,
+    0 0 20px #40ecff, 0 0 25px #40ecff, 0 0 30px #40ecff;
+}
+.juego3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(5, 200, 38);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego3:hover {
+    background-color: #076923;
+}
+.juego3 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ3{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #76ff40,0 0 15px #76ff40,
+    0 0 20px #76ff40, 0 0 25px #76ff40, 0 0 30px #76ff40;
+}
+.juego4 {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego4:hover {
+    background-color: #888685;
+}
+.juego4 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ4{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px rgb(0, 0, 0),0 0 15px #000000,
+    0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000;
+}
+.juego5 {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(227, 130, 18);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego5:hover {
+    background-color: #a44908;
+}
+.juego5 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ5{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffa600,0 0 15px #ffa600,
+    0 0 20px #ffa600, 0 0 25px #ffa600, 0 0 30px #ffa600;
+}
+.juego6 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #a40808;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego6:hover {
+    background-color: #550505;
+}
+.juego6 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ6{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ff0000,0 0 15px #ff0000,
+    0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000;
+}
+.juego7 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #6d08a4;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego7:hover {
+    background-color: #400555;
+}
+.juego7 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ7{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #c800ff,0 0 15px #c800ff,
+    0 0 20px #c800ff, 0 0 25px #c800ff, 0 0 30px #c800ff;
+}
+.juego8 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #cfde00;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.juego8:hover {
+    background-color: #8a7708;
+}
+.juego8 img {
+    width: 160px;
+    height: 160px;
+}
+.letraJ8{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffd900,0 0 15px #ffd900,
+    0 0 20px #ffd900, 0 0 25px #ffd900, 0 0 30px #ffd900;
+}
+.contenedorJuega {
+    padding: 3% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo {
+    margin: 5px; /* Espacio entre las secciones */
+}
+/*Seccion Superate*/
+.container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:10px;
+    margin-top: 2%;
+}
+.container .card2{
+    width:450px;
+    position: relative;
+    height: 470px;
+    background: #af4c00;
+    color:white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    margin-top:10%;
+
+}
+.container .card2 .imgBx{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    top: -40px;
+    left: 50px;
+}
+.container .card2 .imgBx img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.imgBx:hover{
+    transform: scale(1.1);
+}
+.alinTxtCard{
+    text-align: center;
+}
+.letraS1{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ff8000,0 0 15px #ff8000,
+    0 0 20px #ff8000, 0 0 25px #ff8000, 0 0 30px #ff8000;
+}
+.container .card3{
+    width:450px;
+    position: relative;
+    height: 470px;
+    background: #2c9a08;
+    color:white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    margin-top:10%;
+
+}
+.container .card3 .imgBx{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    top: -40px;
+    left: 50px;
+}
+.container .card3 .imgBx img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.letraS2{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #00ff0d,0 0 15px #00ff0d,
+    0 0 20px #00ff0d, 0 0 25px #00ff0d, 0 0 30px #00ff0d;
+}
+.container .card4{
+    width:450px;
+    position: relative;
+    height: 470px;
+    background: #41488b;
+    color:white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    margin-top:10%;
+
+}
+.container .card4 .imgBx{
+    position: relative;
+    width: 330px;
+    height: 330px;
+    top: -15px;
+    left: 55px;
+}
+.container .card4 .imgBx img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.letraS3{
+    color:rgb(255, 253, 255);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #00a2ff,0 0 15px #00a2ff,
+    0 0 20px #00a2ff, 0 0 25px #00a2ff, 0 0 30px #00a2ff;
+}

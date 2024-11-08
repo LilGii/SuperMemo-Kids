@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Super MemoKids</title>
+</head>
+<body>
+    <section id="Intro" class="seccion">
+    <canvas id="canvas"></canvas>
+        <script src="scriptMouse.js"></script>
+        <a href="#Inicio">
+        <img src="Logo.png" alt="Imagen Flotante" class="flotante">
+        </a>
+    </section>
+    <section id="Inicio" class="seccion">
+        <h1 class="InicioTitulo huno">Inicio</h1>
+		<div class="SecInicio">
+		<div class="container">
+			<div class="card">
+				<div class="imgBx">
+					<a href="#Aprende">
+						<img src="AprendeInicio.jpg" alt="Imagen 1"> <!-- Añadí un atributo "alt" para la imagen -->
+					</a>
+				</div>
+				<div class="alinTxtCard">
+					<h2>Aprende</h2>
+					<p>Te brinda una experiencia
+						de aprendizaje única con videos interactivos
+						que te guiarán a dominar operaciones básicas
+						en tres niveles de dificultad distintos.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="card">
+				<div class="imgBx">
+					<a href="#Juega">
+						<img src="JuegaInicio.jpg" alt="Imagen 2"> <!-- Añadí un atributo "alt" para la imagen -->
+					</a>
+				</div>
+				<div class="alinTxtCard">
+					<h2>Juega</h2>
+					<p>Podrás poner en práctica tus
+						conocimientos adquiridos a través de divertidos
+						juegos diseñados para reforzar tus habilidades.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="card">
+				<div class="imgBx">
+					<a href="#Superate">
+						<img src="SuperateInicio.jpg" alt="Imagen 3"> <!-- Añadí un atributo "alt" para la imagen -->
+					</a>
+				</div>
+				<div class="alinTxtCard">
+				<h2>Superate</h2>
+				<p> Encontrarás herramientas y
+					recursos, para potenciar y
+					mejorar tu proceso de aprendizaje.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    </section>
+    <section id="Aprende" class="seccion">
+        <h1 class="AprendeTitulo huno" >Aprende</h1>
+        <div class="seccionAprende">
+		<div class="contenedor">
+            <div class="grupo">
+                <div class="operacion" id="suma">
+                    <img src="sum.png" alt="Suma">
+                    <p class="letrasOperaciones">SUMA</p>
+                    <div class="opciones oculto">
+                        <div class="opcion facil"><a class="letrasopciones" href="SumaF.html">Fácil</a></div>
+                        <div class="opcion medio"><a class="letrasopciones" href="SumaM.html">Medio</a></div>
+                        <div class="opcion dificil"><a class="letrasopciones" href="SumaD.html">Difícil</a></div>
+                    </div>
+                </div>
+                <div class="operacion" id="resta">
+                    <img src="res.png" alt="Resta">
+                    <p class="letrasOperaciones">RESTA</p>
+                    <div class="opciones oculto">
+                        <div class="opcion facil"><a class="letrasopciones" href="restaF.html">Fácil</a></div>
+                        <div class="opcion medio"><a class="letrasopciones" href="restaM.html">Medio</a></div>
+                        <div class="opcion dificil"><a class="letrasopciones" href="restaD.html">Difícil</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo">
+                <div class="operacion" id="multiplicacion">
+                    <img src="mult.png" alt="Multiplicación">
+                    <p class="letrasOperaciones">MULTIPLICACION</p>
+                    <div class="opciones oculto">
+                        <div class="opcion facil"><a class="letrasopciones" href="multF.html">Fácil</a></div>
+                        <div class="opcion medio"><a class="letrasopciones" href="multM.html">Medio</a></div>
+                        <div class="opcion dificil"><a class="letrasopciones" href="multD.html">Difícil</a></div>
+                    </div>
+                </div>
+                <div class="operacion" id="division">
+                    <img src="div.png" alt="División">
+                    <p class="letrasOperaciones">DIVISION</p>
+                    <div class="opciones oculto">
+                        <div class="opcion facil"><a class="letrasopciones" href="divF.html">Fácil</a></div>
+                        <div class="opcion medio"><a class="letrasopciones" href="divM.html">Medio</a></div>
+                        <div class="opcion dificil"><a class="letrasopciones" href="divD.html">Difícil</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptOpciones.js"></script>
+    </section>
+    <section id="Juega" class="seccion">
+        <h1 class="JuegaTitulo huno">Juega</h1>
+        <div class="grupo">
+            <div class="contenedorJuega">
+                <div class="juego1">
+                    <img onclick="window.location.href='juego1.html'" src="juego1.png" alt="juego1">
+                    <p onclick="window.location.href='juego1.html'" class="letraJ1">Castillo</p>
+                </div>
+                <!--<div class="juego2">
+                    <img onclick="window.location.href='juego2.html'" src="juego2.png" alt="juego2">
+                    <p onclick="window.location.href='juego2.html'" class="letraJ2">2048</p>
+                </div>-->
+                <div class="juego7">
+                    <img onclick="window.location.href='https://arbolabcgames.top/invasion/'" src="juego7.png" alt="juego7">
+                    <p onclick="window.location.href='https://arbolabcgames.top/invasion/'" class="letraJ7">Invasión</p>
+                </div>
+                <div class="juego6">
+                    <img onclick="window.location.href='https://arbolabcgames.top/robots-multiplication/'" src="juego6.png" alt="juego6">
+                    <p onclick="window.location.href='https://arbolabcgames.top/robots-multiplication/'" class="letraJ6">Guerra Robots</p>
+                </div>
+            </div>
+        </div>
+        <div class="grupo">
+            <div class="contenedorJuega">
+                <div class="juego3">
+                    <img onclick="window.location.href='https://arbolabcgames.top/monstruos-mult-div/'" src="juego3.png" alt="juego3">
+                    <p onclick="window.location.href='https://arbolabcgames.top/monstruos-mult-div/'" class="letraJ3">Monstruos</p>
+                </div>
+                <div class="juego5">
+                    <img onclick="window.location.href='https://arbolabcgames.top/Memory_by_7/'" src="juego5.png" alt="juego5">
+                    <p onclick="window.location.href='https://arbolabcgames.top/Memory_by_7/'" class="letraJ5">Memorama</p>
+                </div>
+                <div class="juego4">
+                    <img onclick="window.location.href='https://arbolabcgames.top/math-battle/'" src="juego4.png" alt="juego4">
+                    <p onclick="window.location.href='https://arbolabcgames.top/math-battle/'" class="letraJ4">Batalla Monstruos</p>
+                </div>
+                <div class="juego8">
+                    <img onclick="window.location.href='https://arbolabcgames.top/M92AVF/'" src="juego8.png" alt="juego8">
+                    <p onclick="window.location.href='https://arbolabcgames.top/M92AVF/'" class="letraJ8">Alimenta al Puma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Superate" class="seccion superateOpciones">
+        <h1 class="SuperateTitulo huno">Superate</h1>
+        <div class="SecInicio">
+            <div class="container">
+                <div class="card2">
+                    <div class="imgBx">
+                        <a href="https://www.youtubekids.com/channel/UCCZpm6436NiU__lcBAlEZmQ?hl=es">
+                            <img src="superate1.png" alt="Imagen 1"> <!-- Añadí un atributo "alt" para la imagen -->
+                        </a>
+                    </div>
+                    <div class="alinTxtCard">
+                        <h2 class="letraS1">Smile and Learn</h2>
+                        <p>Descubre videos educativos de matemáticas y
+                            cursos de lectura en Smile and Learn.
+                            Aprende de manera divertida con lecciones interactivas.
+                            ¡Explora y sonríe mientras aprendes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card3">
+                    <div class="imgBx">
+                        <a href="https://arbolabc.com/">
+                            <img src="superate2.png" alt="Imagen 2"> <!-- Añadí un atributo "alt" para la imagen -->
+                        </a>
+                    </div>
+                    <div class="alinTxtCard">
+                        <h2 class="letraS2">Árbol ABC</h2>
+                        <p>Explora juegos educativos de literatura,
+                            español y matemáticas en el mundo de ABC.
+                            ¡Descubre la magia del aprendizaje con juegos envolventes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card4">
+                    <div class="imgBx">
+                        <a href="https://www.mundoprimaria.com/">
+                            <img src="superate3.png" alt="Imagen 3"> <!-- Añadí un atributo "alt" para la imagen -->
+                        </a>
+                    </div>
+                    <div class="alinTxtCard">
+                    <h2 class="letraS3">Mundo Primaria</h2>
+                    <p>Explora un mundo educativo lleno de diversión con actividades,
+                        cuentos, juegos, dibujos y poemas. Potencia tu aprendizaje de manera creativa y entretenida
+                        ¡Descubre nuevas formas de crecer y aprender cada día!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="menu MenuLetras">
+        <a href="#Inicio">Inicio</a>
+        <a href="#Aprende">Aprende</a>
+        <a href="#Juega">Juega</a>
+        <a href="#Superate">Superate</a>
+    </nav>
+</body>
+</html>
